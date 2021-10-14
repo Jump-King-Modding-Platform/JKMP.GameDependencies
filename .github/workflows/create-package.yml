@@ -34,8 +34,11 @@ jobs:
         shell: bash
         run: ./AssemblyReflector/AssemblyReflector.exe -i ./game-files/JumpKing.exe -o ./pkg/ref/
       - name: Create package file
-        shell: bash
-        run: zip -r JKMP.GameDependencies.nupkg ./pkg
+        uses: papeloto/action-zip@v1
+        with:
+          files: ./pkg
+          recursive: true
+          dest: JKMP.GameDependencies.nupkg
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
