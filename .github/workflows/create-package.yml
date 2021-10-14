@@ -23,7 +23,7 @@ jobs:
           files: |
             regex:^[^\/\s]+\.(exe|dll)$
       - name: Download AssemblyReflector
-        uses: suisei-cn/actions-downlaod-file@v1
+        uses: suisei-cn/actions-download-file@v1
         with:
           url: https://github.com/Jump-King-Multiplayer/AssemblyReflector/releases/download/latest/Build.zip
           target: "AssemblyReflector"
