@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>JKMP.GameDependencies</id>
+    <version>1.0.0</version>
+    <description>Contains Jump King game assemblies required for compiling JKMP assemblies. Note that the assemblies can't be used at runtime because the method IL instructions have been removed.</description>
+    <authors>https://github.com/orgs/Jump-King-Multiplayer/people</authors>
+    <projectUrl>https://github.com/Jump-King-Multiplayer/JKMP.GameDependencies</projectUrl>
+    <license>https://github.com/Jump-King-Multiplayer/JKMP.GameDependencies/blob/main/LICENSE</license>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="Monogame.Framework.Portable" version="3.7.1.189" />
+    </dependencies>
+    <files>
+      <file src="readme.txt" target="" />
+    </files>
+  </metadata>
+</package>
