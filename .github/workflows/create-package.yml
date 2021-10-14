@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Download Jump King content
-        uses: "Skippeh/steamfetch-action@v1"
+        uses: Skippeh/steamfetch-action@v1
         with:
           username: "${{ secrets.STEAM_USER }}"
           password: "${{ secrets.STEAM_PASS }}"
@@ -22,3 +22,11 @@ jobs:
           # Download all dll/exe files in root directory
           files: |
             regex:^[^\/\s]+\.(exe|dll)$
+      - name: Download AssemblyReflector
+        uses: suisei-cn/actions-downlaod-file@v1
+        with:
+          url: https://github.com/Jump-King-Multiplayer/AssemblyReflector/releases/download/latest/Build.zip
+          target: "AssemblyReflector"
+      - name: Unzip AssemblyReflector
+        shell: bash
+        run: unzip AssemblyReflector/Build.zip -d ./
