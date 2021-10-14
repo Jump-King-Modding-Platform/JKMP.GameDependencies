@@ -33,3 +33,12 @@ jobs:
       - name: Run AssemblyReflector
         shell: bash
         run: ./AssemblyReflector/AssemblyReflector.exe -i ./game-files/JumpKing.exe -o ./pkg/ref/
+      - name: Create package file
+        shell: bash
+        run: zip -r JKMP.GameDependencies.nupkg ./pkg
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: JKMP.GameDependencies.nupkg
+          path: JKMP.GameDependencies.nupkg
+          retention-days: 1
