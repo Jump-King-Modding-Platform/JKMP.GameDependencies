@@ -29,4 +29,7 @@ jobs:
           target: "AssemblyReflector"
       - name: Unzip AssemblyReflector
         shell: bash
-        run: unzip AssemblyReflector/Build.zip -d ./
+        run: unzip AssemblyReflector/Build.zip -d ./AssemblyReflector
+      - name: Run AssemblyReflector
+        shell: bash
+        run: ./AssemblyReflector/AssemblyReflector.exe -i ./game-files/JumpKing.exe -o ./pkg/ref/
