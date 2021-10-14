@@ -26,7 +26,7 @@ jobs:
         uses: suisei-cn/actions-download-file@v1
         with:
           url: https://github.com/Jump-King-Multiplayer/JKMP.Patcher/releases/download/latest/Build.zip
-          target: "Patcher"
+          target: "JKMP.Patcher"
       - name: Unzip JKMP.Patcher
         shell: bash
         run: unzip JKMP.Patcher/Build.zip -d ./JKMP.Patcher
