@@ -22,6 +22,17 @@ jobs:
           # Download all dll/exe files in root directory
           files: |
             regex:^[^\/\s]+\.(exe|dll)$
+      - name: Download JKMP.Patcher
+        uses: suisei-cn/actions-download-file@v1
+        with:
+          url: https://github.com/Jump-King-Multiplayer/JKMP.Patcher/releases/download/latest/Build.zip
+          target: "Patcher"
+      - name: Unzip JKMP.Patcher
+        shell: bash
+          run: unzip JKMP.Patcher/Build.zip -d ./JKMP.Patcher
+      - name: Run JKMP.Patcher
+        shell: bash
+        run: ./JKMP.Patcher/JKMP.Patcher.exe -g ./game-files
       - name: Download AssemblyReflector
         uses: suisei-cn/actions-download-file@v1
         with:
