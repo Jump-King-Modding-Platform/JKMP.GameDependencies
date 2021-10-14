@@ -1,0 +1,24 @@
+name: Create Package
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  create-package:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download Jump King content
+        uses: "Skippeh/steamfetch-action@v1"
+        with:
+          username: "${{ secrets.STEAM_USER }}"
+          password: "${{ secrets.STEAM_PASS }}"
+          dir: "${{ github.workspace }}/game-files"
+          os: windows
+          app: 1061090
+          osarch: 32
+
+          # Download all dll/exe files in root directory
+          files: |
+            regex:^[^\/\s]+\.(exe|dll)$
