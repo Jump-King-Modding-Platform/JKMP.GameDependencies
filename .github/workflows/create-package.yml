@@ -56,3 +56,5 @@ jobs:
           name: JKMP.GameDependencies.nupkg
           path: JKMP.GameDependencies.nupkg
           retention-days: 1
+      - name: Publish nuget package
+        run: dotnet nuget push JKMP.GameDependencies.nupkg --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
