@@ -43,7 +43,7 @@ jobs:
         run: unzip AssemblyReflector/Build.zip -d ./AssemblyReflector
       - name: Run AssemblyReflector
         shell: bash
-        run: ./AssemblyReflector/AssemblyReflector.exe -i ./game-files/JumpKing.exe -o ./pkg/ref/
+        run: ./AssemblyReflector/AssemblyReflector.exe -i ./game-files/JumpKing.exe -o ./pkg/ref/any/
       - name: Create package file
         uses: papeloto/action-zip@v1
         with:
