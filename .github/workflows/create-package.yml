@@ -32,7 +32,7 @@ jobs:
         run: unzip JKMP.Patcher/Build.zip -d ./JKMP.Patcher
       - name: Run JKMP.Patcher
         shell: bash
-        run: ./JKMP.Patcher/JKMP.Patcher.exe -g ./game-files
+        run: ./JKMP.Patcher/JKMP.Patcher.exe -g ./game-files --ci
       - name: Download AssemblyReflector
         uses: suisei-cn/actions-download-file@v1
         with:
