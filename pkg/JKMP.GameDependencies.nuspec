@@ -8,6 +8,7 @@
     <projectUrl>https://github.com/Jump-King-Multiplayer/JKMP.GameDependencies</projectUrl>
     <license>https://github.com/Jump-King-Multiplayer/JKMP.GameDependencies/blob/main/LICENSE</license>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <repository type="git" url="https://github.com/Jump-King-Multiplayer/JKMP.GameDependencies" />
     <dependencies>
       <dependency id="Monogame.Framework.Portable" version="3.7.1.189" />
     </dependencies>
