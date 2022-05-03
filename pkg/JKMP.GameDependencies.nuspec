@@ -6,7 +6,7 @@
     <description>Contains Jump King game assemblies required for compiling JKMP assemblies. Note that the assemblies can't be used at runtime because the method IL instructions have been removed.</description>
     <authors>https://github.com/orgs/Jump-King-Multiplayer/people</authors>
     <projectUrl>https://github.com/Jump-King-Multiplayer/JKMP.GameDependencies</projectUrl>
-    <license>MIT</license>
+    <license type="expression">MIT</license>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <repository type="git" url="https://github.com/Jump-King-Multiplayer/JKMP.GameDependencies" />
     <dependencies>
