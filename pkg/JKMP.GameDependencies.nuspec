@@ -7,6 +7,7 @@
     <authors>https://github.com/orgs/Jump-King-Multiplayer/people</authors>
     <projectUrl>https://github.com/Jump-King-Multiplayer/JKMP.GameDependencies</projectUrl>
     <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <repository type="git" url="https://github.com/Jump-King-Multiplayer/JKMP.GameDependencies" />
     <dependencies>
